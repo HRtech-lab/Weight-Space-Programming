@@ -10,7 +10,7 @@ Fold inference-time batch normalisation into a preceding dense layer.
 python examples/fold_batch_norm.py
 ```
 
-## Relu rescaling
+## ReLU rescaling
 
 Rescale ReLU hidden units while preserving the network's output.
 

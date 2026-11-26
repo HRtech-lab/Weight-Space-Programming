@@ -1,8 +1,16 @@
 # Weight Space Programming
 
-A weight matrix can be written down from a specification. For example, subtract the inputs in both directions, rectify the differences, then add the results. The resulting two-unit network computes XOR on binary inputs and absolute difference over the whole plane. A truth-table check covers the first claim. The second follows from the algebra.
+Thirteen labs explore how neural network parameters determine a function. Start by constructing XOR directly from two ReLU units, then study generated weights, low-rank edits, neuron alignment and checkpoint merging. Each lab tests the resulting function on a specified set of inputs.
 
-This course starts with direct parameter construction, moves on to parameter generation and constrained edits, and compares established methods for aligning or merging checkpoints. The final workshop opens a fitted checkpoint, installs a specified new response and measures its effect on independent inputs. The latter methods are closely related tools for reasoning about parameter space. Each lecture includes runnable Python, an executed notebook, an exercise and a figure from the recorded run. [WeightCode preprint](https://arxiv.org/abs/2611.25476) · [Tracr](https://arxiv.org/abs/2301.05062)
+## Try a short example
+
+The [short examples](examples/README.md) cover folding batch normalisation into a dense layer and rescaling ReLU units. The two scripts use NumPy. From the repository root, run
+
+```sh
+python examples/fold_batch_norm.py
+```
+
+Related reading includes the [WeightCode preprint](https://arxiv.org/abs/2611.25476) and [Tracr](https://arxiv.org/abs/2301.05062).
 
 ## From a function to its parameters
 
@@ -46,4 +54,4 @@ Task arithmetic and TIES operate on displacements from a common model. The arith
 
 ## Running the course
 
-Install the packages in [requirements.txt](requirements.txt). Open any worked notebook in its lecture directory, or run its Python script from the command line. The notebooks are saved with their outputs. The small constructed models use public methods and locally generated data. [MIT licence](../LICENSE)
+Install the packages in [requirements.txt](requirements.txt). Open any worked notebook in its lecture directory, or run its Python script from the command line. The notebooks are saved with their outputs. The small constructed models use public methods and locally generated data. [MIT licence](LICENSE)
